@@ -1,0 +1,26 @@
+<head>
+
+<title> Leaderboard</title>
+
+</head>
+
+<body>
+
+<h1>Leaderboard</h1>
+{{> leaderboard}}
+{{player}}
+{{otherHelperFunction}}
+
+</body>
+
+<template name="leaderboard">
+
+
+<ul>
+	{{#each player}}
+		<li class="player">{{name}}: {{score}}</li>
+	{{/each}}
+</ul>
+
+</template>
+
